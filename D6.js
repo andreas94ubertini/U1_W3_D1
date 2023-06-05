@@ -12,13 +12,12 @@ strgConcat("ciao", "belli")
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
 
-let counter = 0
 const arrayOfNumbers = []
-while (counter < 10) {
-  arrayOfNumbers.push(Math.floor(Math.random() * 101))
-  counter++
+for (let i = 0; i < 101; i++) {
+  arrayOfNumbers.push(i)
 }
-console.log(arrayOfNumbers)
+
+console.log(arrayOfNumbers, "esercizio 2")
 
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici

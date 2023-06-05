@@ -13,8 +13,8 @@ strgConcat("ciao", "belli")
 */
 
 const arrayOfNumbers = []
-for (let i = 0; i < 101; i++) {
-  arrayOfNumbers.push(i)
+for (let i = 0; i < 10; i++) {
+  arrayOfNumbers.push(Math.floor(Math.random() * 11))
 }
 
 console.log(arrayOfNumbers, "esercizio 2")

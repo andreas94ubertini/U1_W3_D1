@@ -3,6 +3,11 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
+const strgConcat = (str1, str2) => {
+  let newString = str1.slice(0, 2) + str2.slice(str2.length - 3)
+  console.log(newString, "esercizio 1")
+}
+strgConcat("ciao", "belli")
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
@@ -63,6 +68,13 @@ console.log(incrementedArray(arrayOfNumbers, multiplier), "sono incrementato")
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+
+const arrayOfStrg = ["EPICODE", "is", "great"]
+const createMap = (arr) => {
+  const mappedArray = arr.map((element) => element.length)
+  return mappedArray
+}
+console.log(createMap(arrayOfStrg), "sono map")
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.

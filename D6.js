@@ -30,15 +30,15 @@ console.log(evenNumbers)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-const sumOfNumbers = function () {
+const sumOfNumbers = function (arr) {
   let total = 0
-  arrayOfNumbers.forEach((n) => {
+  arr.forEach((n) => {
     total += n
   })
 
   return total
 }
-console.log(sumOfNumbers())
+console.log(sumOfNumbers(arrayOfNumbers), "esercizio 4")
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
